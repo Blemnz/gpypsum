@@ -11,7 +11,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        
+        return view('dashboard.products');
     }
 
     /**
@@ -19,7 +19,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.addProduct');
     }
 
     /**
@@ -27,7 +27,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**
